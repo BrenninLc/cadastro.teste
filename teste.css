@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0%;
+  font-family: 'poppins', sans-serif;
+}
+@media screen and (max-width: 1200px){
+ /*desktop*/  
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://lh3.googleusercontent.com/pw/ADCreHeV4ktT_3VOcoaLr0T44lCsTOLzEeWZfuGXyaJlTIocnKnsmmpjwWj_JuNkj2XQaRdDG92ovBlUuH7-lQVLfYBA0du4oTNn9FLsBqSoeYEZwBdkL3Vqiu-mK1HyDlDGbEJIyg3W7tfBbzRXb8LHiAY5=w1073-h603-s-no?authuser=0) no-repeat;
+  background-position: center; 
+  background-size:cover; 
+
+}
+ .form-box{
+  position: relative;
+  width: 450px;
+  height: 500px;
+  background:transparent;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ h2{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.inputbox{
+  position: relative;
+  margin: 20px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+.inputbox input{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color: #fff;
+}
+.inputbox ion-icon{
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+
+button{
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  
+}
+
+.Cadastra-se{
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+
+}
+.Cadastra-se p a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.Cadastra-se p a:hover{
+  text-decoration: underline;
+}
+
+body{
+  background-color: #212121;
+}
+.check {
+  position: relative;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #bbb;
+  transition: all .3s;
+  
+ }
+ .check::before {
+  content: '';
+  position: absolute;
+  border: solid #fff;
+  display: block;
+  width: .3em;
+  height: .6em;
+  border-width: 0 .2em .2em 0;
+  z-index: 1;
+  opacity: 0;
+  right: calc(50% - .3em);
+  top: calc(50% - .6em);
+  transform: rotate(0deg);
+  transition: all .3s;
+  transform-origin: center center;
+ }
+ .check:checked {
+  animation: a .3s ease-in forwards;
+  background-color: rgb(120, 190, 120);
+ }
+ .check:checked::before {
+  opacity: 1;
+  transform: rotate(405deg);
+ }
+ @keyframes a {
+  0% {
+   opacity: 1;
+   transform: scale(1) rotateY(0deg);
+  }
+  50% {
+   opacity: 0;
+   transform: scale(.8) rotateY(180deg);
+  }
+  100% {
+   opacity: 1;
+   transform: scale(1) rotateY(360deg);
+  }
+ }
